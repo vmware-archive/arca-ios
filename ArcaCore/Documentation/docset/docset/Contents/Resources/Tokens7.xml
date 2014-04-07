@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/ArcaManagedObjectInterface.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/ArcaManagedObjectInterface</TokenIdentifier>
+			<Abstract type="html">The selectors which would need to be exported by an object wishing to replace the built in ArcaManagedObject</Abstract>
+			<DeclaredIn>ArcaManagedObject.h</DeclaredIn>
+            
+			
+			<NodeRef refid="7"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ArcaManagedObjectInterface/primaryKeyPath</TokenIdentifier>
+			<Abstract type="html">The keypath on the object that you will be using for uniqing purposes</Abstract>
+			<DeclaredIn>ArcaManagedObject.h</DeclaredIn>
+			
+			<Declaration>+ (NSString *)primaryKeyPath</Declaration>
+			
+			<ReturnValue><Abstract type="html">The keyPath of the primary key (uniqueness) property</Abstract></ReturnValue>
+			<Anchor>//api/name/primaryKeyPath</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ArcaManagedObjectInterface/primaryKey</TokenIdentifier>
+			<Abstract type="html">The actual primary key value for a given object</Abstract>
+			<DeclaredIn>ArcaManagedObject.h</DeclaredIn>
+			
+			<Declaration>- (id)primaryKey</Declaration>
+			
+			<ReturnValue><Abstract type="html">The primary key value</Abstract></ReturnValue>
+			<Anchor>//api/name/primaryKey</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ArcaManagedObjectInterface/contextFactory</TokenIdentifier>
+			<Abstract type="html">The object that is responsible for creating object contexts</Abstract>
+			<DeclaredIn>ArcaManagedObject.h</DeclaredIn>
+			
+			<Declaration>+ (id&lt;ArcaContextFactoryCompatibilityInterface&gt;)contextFactory</Declaration>
+			
+			<ReturnValue><Abstract type="html">The instance of the context factory class</Abstract></ReturnValue>
+			<Anchor>//api/name/contextFactory</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ArcaManagedObjectInterface/objectFactory</TokenIdentifier>
+			<Abstract type="html">The object that is responsible for creating managed objects</Abstract>
+			<DeclaredIn>ArcaManagedObject.h</DeclaredIn>
+			
+			<Declaration>+ (id&lt;ArcaObjectFactoryInterface&gt;)objectFactory</Declaration>
+			
+			<ReturnValue><Abstract type="html">The instance of the object factory class</Abstract></ReturnValue>
+			<Anchor>//api/name/objectFactory</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

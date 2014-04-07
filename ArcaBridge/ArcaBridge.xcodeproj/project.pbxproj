@@ -1,0 +1,319 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		75A6C83E18C11FFB006B3B6E /* ArcaBridge_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 75A6C83D18C11FFB006B3B6E /* ArcaBridge_Prefix.pch */; };
+		75A6C84018C11FFB006B3B6E /* ArcaBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 75A6C83F18C11FFB006B3B6E /* ArcaBridge.h */; };
+		75A6C84418C11FFC006B3B6E /* build.sh in CopyFiles */ = {isa = PBXBuildFile; fileRef = 75A6C84318C11FFC006B3B6E /* build.sh */; };
+		75C22DA718C1211D00BB4046 /* HTTPOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 75C22DA518C1211D00BB4046 /* HTTPOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		75C22DA818C1211D00BB4046 /* HTTPOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C22DA618C1211D00BB4046 /* HTTPOperation.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		75A6C83818C11FFB006B3B6E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				75A6C84418C11FFC006B3B6E /* build.sh in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		75A6C83D18C11FFB006B3B6E /* ArcaBridge_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArcaBridge_Prefix.pch; sourceTree = "<group>"; };
+		75A6C83F18C11FFB006B3B6E /* ArcaBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArcaBridge.h; sourceTree = "<group>"; };
+		75A6C84318C11FFC006B3B6E /* build.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = build.sh; sourceTree = "<group>"; };
+		75C22DA518C1211D00BB4046 /* HTTPOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPOperation.h; sourceTree = "<group>"; };
+		75C22DA618C1211D00BB4046 /* HTTPOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPOperation.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		75A6C83718C11FFB006B3B6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		75A6C82D18C11FFB006B3B6E = {
+			isa = PBXGroup;
+			children = (
+				75A6C83C18C11FFB006B3B6E /* ArcaBridge */,
+			);
+			sourceTree = "<group>";
+		};
+		75A6C83C18C11FFB006B3B6E /* ArcaBridge */ = {
+			isa = PBXGroup;
+			children = (
+				75C22DA518C1211D00BB4046 /* HTTPOperation.h */,
+				75C22DA618C1211D00BB4046 /* HTTPOperation.m */,
+				75A6C83D18C11FFB006B3B6E /* ArcaBridge_Prefix.pch */,
+				75A6C83F18C11FFB006B3B6E /* ArcaBridge.h */,
+				75A6C84318C11FFC006B3B6E /* build.sh */,
+			);
+			path = ArcaBridge;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		75A6C83918C11FFB006B3B6E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75C22DA718C1211D00BB4046 /* HTTPOperation.h in Headers */,
+				75A6C84018C11FFB006B3B6E /* ArcaBridge.h in Headers */,
+				75A6C83E18C11FFB006B3B6E /* ArcaBridge_Prefix.pch in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		75A6C83318C11FFB006B3B6E /* framework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75A6C84718C11FFC006B3B6E /* Build configuration list for PBXNativeTarget "framework" */;
+			buildPhases = (
+				75A6C83218C11FFB006B3B6E /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = framework;
+			productName = framework;
+			productType = "com.apple.product-type.bundle";
+		};
+		75A6C83A18C11FFB006B3B6E /* ArcaBridge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75A6C84A18C11FFC006B3B6E /* Build configuration list for PBXNativeTarget "ArcaBridge" */;
+			buildPhases = (
+				75A6C83618C11FFB006B3B6E /* Sources */,
+				75A6C83718C11FFB006B3B6E /* Frameworks */,
+				75A6C83818C11FFB006B3B6E /* CopyFiles */,
+				75A6C83918C11FFB006B3B6E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ArcaBridge;
+			productName = ArcaBridge;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		75A6C82E18C11FFB006B3B6E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Adrian Kemp";
+			};
+			buildConfigurationList = 75A6C83118C11FFB006B3B6E /* Build configuration list for PBXProject "ArcaBridge" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 75A6C82D18C11FFB006B3B6E;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				75A6C83318C11FFB006B3B6E /* framework */,
+				75A6C83A18C11FFB006B3B6E /* ArcaBridge */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		75A6C83218C11FFB006B3B6E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\n\"$PROJECT_DIR/$PROJECT_NAME/build.sh\"\n\t\t\t\t\t";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		75A6C83618C11FFB006B3B6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75C22DA818C1211D00BB4046 /* HTTPOperation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		75A6C84518C11FFC006B3B6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		75A6C84618C11FFC006B3B6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		75A6C84818C11FFC006B3B6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEAD_CODE_STRIPPING = NO;
+				INSTALL_PATH = $PROJECT_DIR;
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = mh_object;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = ArcaBridge;
+				SKIP_INSTALL = NO;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		75A6C84918C11FFC006B3B6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEAD_CODE_STRIPPING = NO;
+				INSTALL_PATH = $PROJECT_DIR;
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = mh_object;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = ArcaBridge;
+				SKIP_INSTALL = NO;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		75A6C84B18C11FFC006B3B6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(inherited)";
+				CONFIGURATION_TEMP_DIR = "$(inherited)";
+				DEAD_CODE_STRIPPING = NO;
+				DSTROOT = /;
+				EXECUTABLE_PREFIX = "${CURRENT_ARCH}-";
+				GCC_PREFIX_HEADER = ArcaBridge/ArcaBridge_Prefix.pch;
+				INSTALL_PATH = $PROJECT_DIR;
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = mh_object;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = ArcaBridge;
+				SKIP_INSTALL = NO;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		75A6C84C18C11FFC006B3B6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(inherited)";
+				CONFIGURATION_TEMP_DIR = "$(inherited)";
+				DEAD_CODE_STRIPPING = NO;
+				DSTROOT = /;
+				EXECUTABLE_PREFIX = "${CURRENT_ARCH}-";
+				GCC_PREFIX_HEADER = ArcaBridge/ArcaBridge_Prefix.pch;
+				INSTALL_PATH = $PROJECT_DIR;
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = mh_object;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = ArcaBridge;
+				SKIP_INSTALL = NO;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		75A6C83118C11FFB006B3B6E /* Build configuration list for PBXProject "ArcaBridge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75A6C84518C11FFC006B3B6E /* Debug */,
+				75A6C84618C11FFC006B3B6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75A6C84718C11FFC006B3B6E /* Build configuration list for PBXNativeTarget "framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75A6C84818C11FFC006B3B6E /* Debug */,
+				75A6C84918C11FFC006B3B6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75A6C84A18C11FFC006B3B6E /* Build configuration list for PBXNativeTarget "ArcaBridge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75A6C84B18C11FFC006B3B6E /* Debug */,
+				75A6C84C18C11FFC006B3B6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 75A6C82E18C11FFB006B3B6E /* Project object */;
+}

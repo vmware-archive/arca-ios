@@ -1,0 +1,768 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		25F7BF6118ABD1D80063AF26 /* Documentation */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 25F7BF6518ABD1D80063AF26 /* Build configuration list for PBXAggregateTarget "Documentation" */;
+			buildPhases = (
+				25F7BF6618ABD1FC0063AF26 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Documentation;
+			productName = Documentation;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		2508B27E1898642100AC35D5 /* ArcaContextFactoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2508B27D1898642100AC35D5 /* ArcaContextFactoryTests.m */; };
+		2508B2821899472C00AC35D5 /* ArcaContextFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 2508B2801899472C00AC35D5 /* ArcaContextFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2508B2831899472C00AC35D5 /* ArcaContextFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2508B2811899472C00AC35D5 /* ArcaContextFactory.m */; };
+		2508B285189948F300AC35D5 /* ArcaPersistentStoreCoordinatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2508B284189948F300AC35D5 /* ArcaPersistentStoreCoordinatorTests.m */; };
+		2508B288189949E600AC35D5 /* ArcaPersistentStoreCoordinator.h in Headers */ = {isa = PBXBuildFile; fileRef = 2508B286189949E600AC35D5 /* ArcaPersistentStoreCoordinator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2508B289189949E600AC35D5 /* ArcaPersistentStoreCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2508B287189949E600AC35D5 /* ArcaPersistentStoreCoordinator.m */; };
+		2508B28C1899A41900AC35D5 /* ArcaObjectFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 2508B28A1899A41900AC35D5 /* ArcaObjectFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2508B28D1899A41900AC35D5 /* ArcaObjectFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2508B28B1899A41900AC35D5 /* ArcaObjectFactory.m */; };
+		2508B28F1899A43100AC35D5 /* ArcaObjectFactoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2508B28E1899A43100AC35D5 /* ArcaObjectFactoryTests.m */; };
+		252E18AE18A2D78B00D11F65 /* ArcaCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2558C78D1896EDED003737BF /* ArcaCore.framework */; };
+		2558C77C1896C07E003737BF /* ArcaCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 2558C7591896B32F003737BF /* ArcaCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2558C7831896C270003737BF /* ArcaManagedObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 2558C7811896C270003737BF /* ArcaManagedObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2558C7841896C270003737BF /* ArcaManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 2558C7821896C270003737BF /* ArcaManagedObject.m */; };
+		2558C7871896E38F003737BF /* ArcaCoreTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2558C7861896E38F003737BF /* ArcaCoreTestCase.m */; };
+		2558C78A1896E42B003737BF /* TestModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2558C7881896E42B003737BF /* TestModel.xcdatamodeld */; };
+		2558C7D3189700AF003737BF /* ErrorConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 2558C7D1189700AF003737BF /* ErrorConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2558C7D4189700AF003737BF /* ErrorConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 2558C7D2189700AF003737BF /* ErrorConstants.m */; };
+		2558C7E51897114F003737BF /* TestConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 2558C7E41897114F003737BF /* TestConstants.m */; };
+		2558C7E8189713FD003737BF /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 2558C7E7189713FD003737BF /* Person.m */; };
+		2558C7EA1897142F003737BF /* ArcaManagedObjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2558C7E91897142F003737BF /* ArcaManagedObjectTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2558C7751896C01E003737BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2558C7301896B1E6003737BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2558C7351896B1E6003737BF;
+			remoteInfo = framework;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2558C73A1896B1E6003737BF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2508B27D1898642100AC35D5 /* ArcaContextFactoryTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArcaContextFactoryTests.m; sourceTree = "<group>"; };
+		2508B2801899472C00AC35D5 /* ArcaContextFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArcaContextFactory.h; sourceTree = "<group>"; };
+		2508B2811899472C00AC35D5 /* ArcaContextFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArcaContextFactory.m; sourceTree = "<group>"; };
+		2508B284189948F300AC35D5 /* ArcaPersistentStoreCoordinatorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArcaPersistentStoreCoordinatorTests.m; sourceTree = "<group>"; };
+		2508B286189949E600AC35D5 /* ArcaPersistentStoreCoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArcaPersistentStoreCoordinator.h; sourceTree = "<group>"; };
+		2508B287189949E600AC35D5 /* ArcaPersistentStoreCoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArcaPersistentStoreCoordinator.m; sourceTree = "<group>"; };
+		2508B28A1899A41900AC35D5 /* ArcaObjectFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArcaObjectFactory.h; sourceTree = "<group>"; };
+		2508B28B1899A41900AC35D5 /* ArcaObjectFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArcaObjectFactory.m; sourceTree = "<group>"; };
+		2508B28E1899A43100AC35D5 /* ArcaObjectFactoryTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArcaObjectFactoryTests.m; sourceTree = "<group>"; };
+		2558C7591896B32F003737BF /* ArcaCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArcaCore.h; sourceTree = "<group>"; };
+		2558C75B1896B32F003737BF /* ArcaCore_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArcaCore_Prefix.pch; sourceTree = "<group>"; };
+		2558C75F1896B32F003737BF /* build.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = build.sh; sourceTree = "<group>"; };
+		2558C7741896C01E003737BF /* ArcaCoreTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ArcaCoreTests-Prefix.pch"; sourceTree = "<group>"; };
+		2558C7811896C270003737BF /* ArcaManagedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArcaManagedObject.h; sourceTree = "<group>"; };
+		2558C7821896C270003737BF /* ArcaManagedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArcaManagedObject.m; sourceTree = "<group>"; };
+		2558C7851896E38F003737BF /* ArcaCoreTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArcaCoreTestCase.h; sourceTree = "<group>"; };
+		2558C7861896E38F003737BF /* ArcaCoreTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArcaCoreTestCase.m; sourceTree = "<group>"; };
+		2558C7891896E42B003737BF /* TestModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TestModel.xcdatamodel; sourceTree = "<group>"; };
+		2558C78D1896EDED003737BF /* ArcaCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ArcaCore.framework; path = ../../ArcaCore.framework; sourceTree = "<group>"; };
+		2558C7D1189700AF003737BF /* ErrorConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErrorConstants.h; sourceTree = "<group>"; };
+		2558C7D2189700AF003737BF /* ErrorConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ErrorConstants.m; sourceTree = "<group>"; };
+		2558C7E31897114F003737BF /* TestConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestConstants.h; sourceTree = "<group>"; };
+		2558C7E41897114F003737BF /* TestConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestConstants.m; sourceTree = "<group>"; };
+		2558C7E6189713FD003737BF /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		2558C7E7189713FD003737BF /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		2558C7E91897142F003737BF /* ArcaManagedObjectTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArcaManagedObjectTests.m; sourceTree = "<group>"; };
+		25E4F90418AD2C4800331DB5 /* quick_start_guide.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = quick_start_guide.md; sourceTree = "<group>"; };
+		25E4F90518AD2D1300331DB5 /* docset_index.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = docset_index.md; sourceTree = "<group>"; };
+		25F7BF6718ABD25C0063AF26 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2558C7391896B1E6003737BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2558C7611896C01D003737BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				252E18AE18A2D78B00D11F65 /* ArcaCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2508B27F189946AB00AC35D5 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				2508B2801899472C00AC35D5 /* ArcaContextFactory.h */,
+				2508B2811899472C00AC35D5 /* ArcaContextFactory.m */,
+				2508B28A1899A41900AC35D5 /* ArcaObjectFactory.h */,
+				2508B28B1899A41900AC35D5 /* ArcaObjectFactory.m */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		2558C72F1896B1E6003737BF = {
+			isa = PBXGroup;
+			children = (
+				25F7BF6918ABD57F0063AF26 /* Documentation */,
+				25F7BF6718ABD25C0063AF26 /* README.md */,
+				2558C7581896B32F003737BF /* ArcaCore */,
+				2558C7531896B325003737BF /* ArcaCoreTests */,
+				2558C7651896C01D003737BF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2558C7531896B325003737BF /* ArcaCoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				2508B28E1899A43100AC35D5 /* ArcaObjectFactoryTests.m */,
+				2558C7E91897142F003737BF /* ArcaManagedObjectTests.m */,
+				2508B27D1898642100AC35D5 /* ArcaContextFactoryTests.m */,
+				2508B284189948F300AC35D5 /* ArcaPersistentStoreCoordinatorTests.m */,
+				2558C7741896C01E003737BF /* ArcaCoreTests-Prefix.pch */,
+				2558C7851896E38F003737BF /* ArcaCoreTestCase.h */,
+				2558C7861896E38F003737BF /* ArcaCoreTestCase.m */,
+				2558C7E31897114F003737BF /* TestConstants.h */,
+				2558C7E41897114F003737BF /* TestConstants.m */,
+				2558C7551896B325003737BF /* Controllers */,
+				2558C7561896B325003737BF /* Models */,
+				2558C7571896B325003737BF /* Resources */,
+			);
+			path = ArcaCoreTests;
+			sourceTree = "<group>";
+		};
+		2558C7551896B325003737BF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2558C7561896B325003737BF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2558C7E6189713FD003737BF /* Person.h */,
+				2558C7E7189713FD003737BF /* Person.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2558C7571896B325003737BF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2558C78D1896EDED003737BF /* ArcaCore.framework */,
+				2558C7881896E42B003737BF /* TestModel.xcdatamodeld */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2558C7581896B32F003737BF /* ArcaCore */ = {
+			isa = PBXGroup;
+			children = (
+				2558C7D1189700AF003737BF /* ErrorConstants.h */,
+				2558C7D2189700AF003737BF /* ErrorConstants.m */,
+				2558C7591896B32F003737BF /* ArcaCore.h */,
+				2558C75B1896B32F003737BF /* ArcaCore_Prefix.pch */,
+				2508B27F189946AB00AC35D5 /* Factories */,
+				2558C75C1896B32F003737BF /* Controllers */,
+				2558C75D1896B32F003737BF /* Models */,
+				2558C75E1896B32F003737BF /* Resources */,
+			);
+			path = ArcaCore;
+			sourceTree = "<group>";
+		};
+		2558C75C1896B32F003737BF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2508B286189949E600AC35D5 /* ArcaPersistentStoreCoordinator.h */,
+				2508B287189949E600AC35D5 /* ArcaPersistentStoreCoordinator.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2558C75D1896B32F003737BF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2558C7811896C270003737BF /* ArcaManagedObject.h */,
+				2558C7821896C270003737BF /* ArcaManagedObject.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2558C75E1896B32F003737BF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2558C75F1896B32F003737BF /* build.sh */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2558C7651896C01D003737BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		25F7BF6918ABD57F0063AF26 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				25E4F90418AD2C4800331DB5 /* quick_start_guide.md */,
+				25E4F90518AD2D1300331DB5 /* docset_index.md */,
+			);
+			path = Documentation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2558C73B1896B1E6003737BF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2558C7831896C270003737BF /* ArcaManagedObject.h in Headers */,
+				2508B28C1899A41900AC35D5 /* ArcaObjectFactory.h in Headers */,
+				2508B288189949E600AC35D5 /* ArcaPersistentStoreCoordinator.h in Headers */,
+				2558C7D3189700AF003737BF /* ErrorConstants.h in Headers */,
+				2508B2821899472C00AC35D5 /* ArcaContextFactory.h in Headers */,
+				2558C77C1896C07E003737BF /* ArcaCore.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2558C7351896B1E6003737BF /* framework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2558C74D1896B1E6003737BF /* Build configuration list for PBXNativeTarget "framework" */;
+			buildPhases = (
+				2558C7341896B1E6003737BF /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = framework;
+			productName = framework;
+			productType = "com.apple.product-type.bundle";
+		};
+		2558C73C1896B1E6003737BF /* ArcaCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2558C7501896B1E6003737BF /* Build configuration list for PBXNativeTarget "ArcaCore" */;
+			buildPhases = (
+				2558C7381896B1E6003737BF /* Sources */,
+				2558C7391896B1E6003737BF /* Frameworks */,
+				2558C73A1896B1E6003737BF /* CopyFiles */,
+				2558C73B1896B1E6003737BF /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ArcaCore;
+			productName = ArcaCore;
+			productType = "com.apple.product-type.bundle";
+		};
+		2558C7631896C01D003737BF /* ArcaCoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2558C7771896C01E003737BF /* Build configuration list for PBXNativeTarget "ArcaCoreTests" */;
+			buildPhases = (
+				2558C7601896C01D003737BF /* Sources */,
+				2558C7611896C01D003737BF /* Frameworks */,
+				2558C7621896C01D003737BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2558C7761896C01E003737BF /* PBXTargetDependency */,
+			);
+			name = ArcaCoreTests;
+			productName = ArcaCoreTests;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2558C7301896B1E6003737BF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Pivotal;
+				TargetAttributes = {
+					2558C7631896C01D003737BF = {
+						TestTargetID = 2558C7351896B1E6003737BF;
+					};
+				};
+			};
+			buildConfigurationList = 2558C7331896B1E6003737BF /* Build configuration list for PBXProject "ArcaCore" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2558C72F1896B1E6003737BF;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2558C7351896B1E6003737BF /* framework */,
+				2558C73C1896B1E6003737BF /* ArcaCore */,
+				2558C7631896C01D003737BF /* ArcaCoreTests */,
+				25F7BF6118ABD1D80063AF26 /* Documentation */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2558C7621896C01D003737BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2558C7341896B1E6003737BF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\n\"$PROJECT_DIR/$PROJECT_NAME/Resources/build.sh\"\n\t\t\t\t\t";
+		};
+		25F7BF6618ABD1FC0063AF26 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/appledoc \\\n--project-name \"${PROJECT_NAME}\" \\\n--project-company \"Omnia\" \\\n--company-id \"com.omnia\" \\\n--output \"${PROJECT_DIR}/Documentation/docset/\" \\\n--install-docset \\\n--logformat xcode \\\n--keep-undocumented-objects \\\n--keep-undocumented-members \\\n--keep-intermediate-files \\\n--no-repeat-first-par \\\n--no-warn-invalid-crossref \\\n--merge-categories \\\n--exit-threshold 2 \\\n--docset-platform-family iphoneos \\\n--ignore \"*.m\" \\\n--include \"${PROJECT_DIR}/${PROJECT_NAME}/Documentation/Images\" \\\n--index-desc \"${PROJECT_DIR}/Documentation/docset_index.md\" \\\n\"${PROJECT_DIR}/${PROJECT_NAME}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2558C7381896B1E6003737BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2508B289189949E600AC35D5 /* ArcaPersistentStoreCoordinator.m in Sources */,
+				2508B2831899472C00AC35D5 /* ArcaContextFactory.m in Sources */,
+				2508B28D1899A41900AC35D5 /* ArcaObjectFactory.m in Sources */,
+				2558C7D4189700AF003737BF /* ErrorConstants.m in Sources */,
+				2558C7841896C270003737BF /* ArcaManagedObject.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2558C7601896C01D003737BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2558C78A1896E42B003737BF /* TestModel.xcdatamodeld in Sources */,
+				2508B27E1898642100AC35D5 /* ArcaContextFactoryTests.m in Sources */,
+				2558C7871896E38F003737BF /* ArcaCoreTestCase.m in Sources */,
+				2558C7E8189713FD003737BF /* Person.m in Sources */,
+				2508B28F1899A43100AC35D5 /* ArcaObjectFactoryTests.m in Sources */,
+				2508B285189948F300AC35D5 /* ArcaPersistentStoreCoordinatorTests.m in Sources */,
+				2558C7E51897114F003737BF /* TestConstants.m in Sources */,
+				2558C7EA1897142F003737BF /* ArcaManagedObjectTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2558C7761896C01E003737BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2558C7351896B1E6003737BF /* framework */;
+			targetProxy = 2558C7751896C01E003737BF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2558C74B1896B1E6003737BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2558C74C1896B1E6003737BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		2558C74E1896B1E6003737BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEAD_CODE_STRIPPING = NO;
+				INSTALL_PATH = $PROJECT_DIR;
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = mh_object;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = ArcaCore;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		2558C74F1896B1E6003737BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEAD_CODE_STRIPPING = NO;
+				INSTALL_PATH = $PROJECT_DIR;
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = mh_object;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = ArcaCore;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		2558C7511896B1E6003737BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(inherited)";
+				CONFIGURATION_TEMP_DIR = "$(inherited)";
+				DEAD_CODE_STRIPPING = NO;
+				DSTROOT = /;
+				EXECUTABLE_PREFIX = "${CURRENT_ARCH}-";
+				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = NO;
+				GCC_PREFIX_HEADER = ArcaCore/ArcaCore_Prefix.pch;
+				INSTALL_PATH = $PROJECT_DIR;
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = mh_object;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = ArcaCore;
+				SKIP_INSTALL = NO;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		2558C7521896B1E6003737BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(inherited)";
+				CONFIGURATION_TEMP_DIR = "$(inherited)";
+				DEAD_CODE_STRIPPING = NO;
+				DSTROOT = /;
+				EXECUTABLE_PREFIX = "${CURRENT_ARCH}-";
+				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = NO;
+				GCC_PREFIX_HEADER = ArcaCore/ArcaCore_Prefix.pch;
+				INSTALL_PATH = $PROJECT_DIR;
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = mh_object;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = ArcaCore;
+				SKIP_INSTALL = NO;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		2558C7781896C01E003737BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					$PROJECT_DIR,
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ArcaCoreTests/ArcaCoreTests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				INFOPLIST_FILE = "ArcaCoreTests/ArcaCoreTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		2558C7791896C01E003737BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					$PROJECT_DIR,
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ArcaCoreTests/ArcaCoreTests-Prefix.pch";
+				INFOPLIST_FILE = "ArcaCoreTests/ArcaCoreTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		2558C7CC1896F258003737BF /* Coverage */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					"TESTING=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+			};
+			name = Coverage;
+		};
+		2558C7CD1896F258003737BF /* Coverage */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEAD_CODE_STRIPPING = NO;
+				INSTALL_PATH = $PROJECT_DIR;
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = mh_object;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = ArcaCore;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Coverage;
+		};
+		2558C7CE1896F258003737BF /* Coverage */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(inherited)";
+				CONFIGURATION_TEMP_DIR = "$(inherited)";
+				DEAD_CODE_STRIPPING = NO;
+				DSTROOT = /;
+				EXECUTABLE_PREFIX = "${CURRENT_ARCH}-";
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
+				GCC_PREFIX_HEADER = ArcaCore/ArcaCore_Prefix.pch;
+				INSTALL_PATH = $PROJECT_DIR;
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = mh_object;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = ArcaCore;
+				SKIP_INSTALL = NO;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Coverage;
+		};
+		2558C7CF1896F258003737BF /* Coverage */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					$PROJECT_DIR,
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ArcaCoreTests/ArcaCoreTests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				INFOPLIST_FILE = "ArcaCoreTests/ArcaCoreTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Coverage;
+		};
+		25F7BF6218ABD1D80063AF26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		25F7BF6318ABD1D80063AF26 /* Coverage */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Coverage;
+		};
+		25F7BF6418ABD1D80063AF26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2558C7331896B1E6003737BF /* Build configuration list for PBXProject "ArcaCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2558C74B1896B1E6003737BF /* Debug */,
+				2558C7CC1896F258003737BF /* Coverage */,
+				2558C74C1896B1E6003737BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Coverage;
+		};
+		2558C74D1896B1E6003737BF /* Build configuration list for PBXNativeTarget "framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2558C74E1896B1E6003737BF /* Debug */,
+				2558C7CD1896F258003737BF /* Coverage */,
+				2558C74F1896B1E6003737BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Coverage;
+		};
+		2558C7501896B1E6003737BF /* Build configuration list for PBXNativeTarget "ArcaCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2558C7511896B1E6003737BF /* Debug */,
+				2558C7CE1896F258003737BF /* Coverage */,
+				2558C7521896B1E6003737BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Coverage;
+		};
+		2558C7771896C01E003737BF /* Build configuration list for PBXNativeTarget "ArcaCoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2558C7781896C01E003737BF /* Debug */,
+				2558C7CF1896F258003737BF /* Coverage */,
+				2558C7791896C01E003737BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Coverage;
+		};
+		25F7BF6518ABD1D80063AF26 /* Build configuration list for PBXAggregateTarget "Documentation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25F7BF6218ABD1D80063AF26 /* Debug */,
+				25F7BF6318ABD1D80063AF26 /* Coverage */,
+				25F7BF6418ABD1D80063AF26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Coverage;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2558C7881896E42B003737BF /* TestModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2558C7891896E42B003737BF /* TestModel.xcdatamodel */,
+			);
+			currentVersion = 2558C7891896E42B003737BF /* TestModel.xcdatamodel */;
+			path = TestModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2558C7301896B1E6003737BF /* Project object */;
+}

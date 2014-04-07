@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/ArcaContextFactoryInterface.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/ArcaContextFactoryInterface</TokenIdentifier>
+			<Abstract type="html">The collection of selectors that an object must export in order to function as a (replacement to) ArcaContextFactory</Abstract>
+			<DeclaredIn>ArcaContextFactory.h</DeclaredIn>
+            
+			
+			<NodeRef refid="6"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ArcaContextFactoryInterface/defaultFactory</TokenIdentifier>
+			<Abstract type="html">Convenience access to an omnipresent factory</Abstract>
+			<DeclaredIn>ArcaContextFactory.h</DeclaredIn>
+			
+			<Declaration>+ (id&lt;ArcaContextFactoryInterface&gt;)defaultFactory</Declaration>
+			
+			<ReturnValue><Abstract type="html">The default static factory</Abstract></ReturnValue>
+			<Anchor>//api/name/defaultFactory</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ArcaContextFactoryInterface/childContextForContext:</TokenIdentifier>
+			<Abstract type="html">Creates and returns an NSManagedObjectContext with the given parent context, and a concurrency type of private queue</Abstract>
+			<DeclaredIn>ArcaContextFactory.h</DeclaredIn>
+			
+			<Declaration>- (NSManagedObjectContext *)childContextForContext:(NSManagedObjectContext *)parentContext</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>parentContext</Name>
+					<Abstract type="html">must be a mainQueueConcurrency type context</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A private queue NSManagedObjectContext</Abstract></ReturnValue>
+			<Anchor>//api/name/childContextForContext:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

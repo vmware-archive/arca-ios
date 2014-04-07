@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/ArcaObjectFactory.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/ArcaObjectFactory</TokenIdentifier>
+			<Abstract type="html">Provides an omnipresent factory which simplifies the creation of core data objects</Abstract>
+			<DeclaredIn>ArcaObjectFactory.h</DeclaredIn>
+            
+			
+			<NodeRef refid="3"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ArcaObjectFactory/objectOfClass:fromSourceData:inContext:error:</TokenIdentifier>
+			<Abstract type="html">Creates or overwrites the object represented in the source data.</Abstract>
+			<DeclaredIn>ArcaObjectFactory.h</DeclaredIn>
+			
+			<Declaration>+ (ArcaManagedObject *)objectOfClass:(Class)objectClass fromSourceData:(NSDictionary *)sourceData inContext:(NSManagedObjectContext *)context error:(NSError **)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>objectClass</Name>
+					<Abstract type="html">The class of the object at the top level of the collection (person, in the example from discussion)</Abstract>
+				</Parameter><Parameter>
+					<Name>sourceData</Name>
+					<Abstract type="html">The dictionary that contains the source (i.e. parsed JSON data from a server)</Abstract>
+				</Parameter><Parameter>
+					<Name>context</Name>
+					<Abstract type="html">The NSManagedObjectContext that will be used to create/retrieve the object</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">Any errors that occur will be populated to this address</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The array of object that were created or retrieved</Abstract></ReturnValue>
+			<Anchor>//api/name/objectOfClass:fromSourceData:inContext:error:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ArcaObjectFactory/updateObject:withSourceData:error:</TokenIdentifier>
+			<Abstract type="html">Updates an object with source data</Abstract>
+			<DeclaredIn>ArcaObjectFactory.h</DeclaredIn>
+			
+			<Declaration>+ (BOOL)updateObject:(ArcaManagedObject *)managedObject withSourceData:(id)sourceData error:(NSError **)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>managedObject</Name>
+					<Abstract type="html">The object to be updated</Abstract>
+				</Parameter><Parameter>
+					<Name>sourceData</Name>
+					<Abstract type="html">The dictionary containing the object source data</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">Any errors that occur will be populated to this address</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A boolean indicating success or failure</Abstract></ReturnValue>
+			<Anchor>//api/name/updateObject:withSourceData:error:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ArcaObjectFactory/replaceObject:withSourceData:error:</TokenIdentifier>
+			<Abstract type="html">Overwrites or creates an object with source data</Abstract>
+			<DeclaredIn>ArcaObjectFactory.h</DeclaredIn>
+			
+			<Declaration>+ (BOOL)replaceObject:(ArcaManagedObject *)managedObject withSourceData:(id)sourceData error:(NSError **)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>managedObject</Name>
+					<Abstract type="html">The object to be overwritten</Abstract>
+				</Parameter><Parameter>
+					<Name>sourceData</Name>
+					<Abstract type="html">The dictionary containing the object source data</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">Any errors that occur will be populated to this address</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A boolean indicating success or failure</Abstract></ReturnValue>
+			<Anchor>//api/name/replaceObject:withSourceData:error:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

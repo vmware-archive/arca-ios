@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/ArcaContextFactory.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/ArcaContextFactory</TokenIdentifier>
+			<Abstract type="html">Used to provide an omnipresent main thread NSManagedObjectContext, as well as simplifying the creation of both standalone and child contexts.</Abstract>
+			<DeclaredIn>ArcaContextFactory.h</DeclaredIn>
+            
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+        
+	</File>
+</Tokens>

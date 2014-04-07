@@ -1,0 +1,4 @@
+Documentation set was installed to Xcode!
+
+Path: /Users/adriankemp/Library/Developer/Shared/Documentation/DocSets/com.omnia.ArcaCore.docset
+Time: 2014-04-09 15:55:30 +0000

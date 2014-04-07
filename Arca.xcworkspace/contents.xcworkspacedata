@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:Arca.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:ArcaSync/ArcaSync.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:ArcaBridge/ArcaBridge.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:ArcaCore/ArcaCore.xcodeproj">
+   </FileRef>
+</Workspace>
