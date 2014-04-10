@@ -6,11 +6,11 @@ Arca is a comprehensive data handling framework for iOS. It's built atop CoreDat
 Arca is in daily use, and was built using the lessons learned from Pivotal Labs expertise in the field. That means there is a pool of industry experts already using, and improving it.
 
 ##Getting Started
-Check out our [Quick Start Guide](Documentation/quick_start_guide.md), and the package [Documentation](Documentation/docset/html/index.html).
+Check out our [Quick Start Guide](https://github.com/cfmobile/arca-ios/wiki/Quick-Start-Guide), and the package [Documentation](https://cfmobile.github.io/arca-ios/Documentation/index.html).
 
 After you've gotten a look at what Arca can do for you, you can check out some of our [Sample Apps](https://github.com/cfmobile/arca-ios-samples) for examples on how to make the most of the framework.
 
-In addition, you might find our [Getting to Know our Repositories](wiki/Getting to Know our Repositories) guide handy, as it describes where you can find current, development, and daily releases.
+In addition, you might find our [Getting to Know our Repositories](https://github.com/cfmobile/arca-ios/wiki/Getting-to-Know-our-Repositories) guide handy, as it describes where you can find current, development, and daily releases.
 
 ##Components
 [ArcaCore](ArcaCore) provides a wrapper around CoreData; adding convenience functions that simplify creating objects, and getting data to and from remote sources (i.e. your API).
