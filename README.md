@@ -22,7 +22,9 @@ In addition, you might find our [Getting to Know our Repositories](wiki/Getting 
 ##Contributing
 If you've fixed a bug, or added a feature, we'd love to take a look. You can check out our [Contributing Guide](Documentation/contributing_guide.md) for full details on how to get your changes rolled into the project.
 
-##Other Repositories
+If you're new to open source, and just looking to cut your teeth, check out the [issues](https://github.com/cfmobile/arca-ios/issues) section. If you're looking for additional guidance, we try to keep an eye on the arca tag on [stackoverflow#arca](https://stackoverflow.com/tags/arca)
+
+##Other Arca iOS Repositories
 [Sample Apps](https://github.com/cfmobile/arca-ios-samples) using Arca as their foundation.
 
 [Levo Templates](https://github.com/cfmobile/arca-ios-templates) for generating Arca compatible models and controllers, or entire applications in a snap.
