@@ -32,6 +32,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7508E3C718F6E05100C4B32F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		753B0F5E18DA218100012F81 /* build.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = build.sh; sourceTree = "<group>"; };
 		753B0F6818DA245400012F81 /* ArcaBridgeAdaptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArcaBridgeAdaptor.h; sourceTree = "<group>"; };
 		753B0F6918DA245400012F81 /* ArcaBridgeAdaptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArcaBridgeAdaptor.m; sourceTree = "<group>"; };
@@ -54,9 +55,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7508E3C618F6E05100C4B32F /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Documentation;
+			sourceTree = "<group>";
+		};
 		753B0F4818DA218100012F81 = {
 			isa = PBXGroup;
 			children = (
+				7508E3C618F6E05100C4B32F /* Documentation */,
+				7508E3C718F6E05100C4B32F /* README.md */,
 				753B0F5718DA218100012F81 /* ArcaSync */,
 			);
 			sourceTree = "<group>";
