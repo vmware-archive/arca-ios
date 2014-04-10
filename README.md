@@ -20,7 +20,7 @@ In addition, you might find our [Getting to Know our Repositories](wiki/Getting 
 [ArcaBridge](ArcaBridge) is the glue that connects core and sync. It provides simple interfaces to local and network sources, which makes your database able to talk to multiple sources easily.
 
 ##Contributing
-If you've fixed a bug, or added a feature, we'd love to take a look. You can check out our [Contributing Guide](Documentation/contributing_guide.md) for full details on how to get your changes rolled into the project.
+If you've fixed a bug, or added a feature, we'd love to take a look. You can check out our [Contributing Guide](https://github.com/cfmobile/arca-ios/wiki/Contributing-Guide) for full details on how to get your changes rolled into the project.
 
 If you're new to open source, and just looking to cut your teeth, check out the [issues](https://github.com/cfmobile/arca-ios/issues) section. If you're looking for additional guidance, we try to keep an eye on the arca tag on [stackoverflow#arca](https://stackoverflow.com/tags/arca)
 
