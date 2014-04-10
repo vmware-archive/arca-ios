@@ -23,16 +23,3 @@ ArcaCore is built the right way; it allows easy customization for common cases a
 - **We don't use blocks** but we do let you use them. You won't be waylayed by seven layers of blocks when debugging your app.
 
 Check out our [Architecture](wiki/Architecture) page for more information.
-
-##Getting Started
-Check out our [Quick Start Guide](Documentation/quick_start_guide.md), and the package [Documentation](Documentation/docset/html/index.html).
-
-In addition, you might find our [Getting to Know our Repositories](wiki/Getting to Know our Repositories) guide handy, as it describes where you can find current, development, and daily releases.
-
-##Contributing
-If you've fixed a bug, or added a feature, we'd love to take a look. You can check out our [Contributing Guide](Documentation/contributing_guide.md) for full details on how to get your changes rolled into the project.
-
-##Related Projects
-[Levo](https://github.com/cfmobile/levo) - A scaffolding tool built on the concept of templating boilerplate code. Arca provides a full suite of levo templates for a quick and easy start.
-
-[Arca For Android](https://github.com/cfmobile/arca-android) - The Android version of Arca. Based on the same concepts and also providing a full suite of templates for levo.
