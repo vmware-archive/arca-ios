@@ -230,6 +230,7 @@
 		75A6C84818C11FFC006B3B6E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				DEAD_CODE_STRIPPING = NO;
 				INSTALL_PATH = $PROJECT_DIR;
 				LINK_WITH_STANDARD_LIBRARIES = NO;
@@ -244,6 +245,7 @@
 		75A6C84918C11FFC006B3B6E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				DEAD_CODE_STRIPPING = NO;
 				INSTALL_PATH = $PROJECT_DIR;
 				LINK_WITH_STANDARD_LIBRARIES = NO;
@@ -258,6 +260,7 @@
 		75A6C84B18C11FFC006B3B6E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CONFIGURATION_BUILD_DIR = "$(inherited)";
 				CONFIGURATION_TEMP_DIR = "$(inherited)";
 				DEAD_CODE_STRIPPING = NO;
@@ -277,6 +280,7 @@
 		75A6C84C18C11FFC006B3B6E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CONFIGURATION_BUILD_DIR = "$(inherited)";
 				CONFIGURATION_TEMP_DIR = "$(inherited)";
 				DEAD_CODE_STRIPPING = NO;
@@ -303,7 +307,7 @@
 				75A6C84618C11FFC006B3B6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		75A6C84718C11FFC006B3B6E /* Build configuration list for PBXNativeTarget "framework" */ = {
 			isa = XCConfigurationList;
@@ -312,7 +316,7 @@
 				75A6C84918C11FFC006B3B6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		75A6C84A18C11FFC006B3B6E /* Build configuration list for PBXNativeTarget "ArcaBridge" */ = {
 			isa = XCConfigurationList;
@@ -321,7 +325,7 @@
 				75A6C84C18C11FFC006B3B6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};

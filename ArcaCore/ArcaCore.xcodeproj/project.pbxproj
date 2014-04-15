@@ -475,6 +475,7 @@
 		2558C74E1896B1E6003737BF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				DEAD_CODE_STRIPPING = NO;
 				INSTALL_PATH = $PROJECT_DIR;
 				LINK_WITH_STANDARD_LIBRARIES = NO;
@@ -488,6 +489,7 @@
 		2558C74F1896B1E6003737BF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				DEAD_CODE_STRIPPING = NO;
 				INSTALL_PATH = $PROJECT_DIR;
 				LINK_WITH_STANDARD_LIBRARIES = NO;
@@ -501,6 +503,7 @@
 		2558C7511896B1E6003737BF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CONFIGURATION_BUILD_DIR = "$(inherited)";
 				CONFIGURATION_TEMP_DIR = "$(inherited)";
 				DEAD_CODE_STRIPPING = NO;
@@ -522,6 +525,7 @@
 		2558C7521896B1E6003737BF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CONFIGURATION_BUILD_DIR = "$(inherited)";
 				CONFIGURATION_TEMP_DIR = "$(inherited)";
 				DEAD_CODE_STRIPPING = NO;
@@ -620,6 +624,7 @@
 		2558C7CD1896F258003737BF /* Coverage */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				DEAD_CODE_STRIPPING = NO;
 				INSTALL_PATH = $PROJECT_DIR;
 				LINK_WITH_STANDARD_LIBRARIES = NO;
@@ -633,6 +638,7 @@
 		2558C7CE1896F258003737BF /* Coverage */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CONFIGURATION_BUILD_DIR = "$(inherited)";
 				CONFIGURATION_TEMP_DIR = "$(inherited)";
 				DEAD_CODE_STRIPPING = NO;
@@ -707,7 +713,7 @@
 				2558C74C1896B1E6003737BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Coverage;
+			defaultConfigurationName = Debug;
 		};
 		2558C74D1896B1E6003737BF /* Build configuration list for PBXNativeTarget "framework" */ = {
 			isa = XCConfigurationList;
@@ -717,7 +723,7 @@
 				2558C74F1896B1E6003737BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Coverage;
+			defaultConfigurationName = Debug;
 		};
 		2558C7501896B1E6003737BF /* Build configuration list for PBXNativeTarget "ArcaCore" */ = {
 			isa = XCConfigurationList;
@@ -727,7 +733,7 @@
 				2558C7521896B1E6003737BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Coverage;
+			defaultConfigurationName = Debug;
 		};
 		2558C7771896C01E003737BF /* Build configuration list for PBXNativeTarget "ArcaCoreTests" */ = {
 			isa = XCConfigurationList;
@@ -737,7 +743,7 @@
 				2558C7791896C01E003737BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Coverage;
+			defaultConfigurationName = Debug;
 		};
 		25F7BF6518ABD1D80063AF26 /* Build configuration list for PBXAggregateTarget "Documentation" */ = {
 			isa = XCConfigurationList;
@@ -747,7 +753,7 @@
 				25F7BF6418ABD1D80063AF26 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Coverage;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 

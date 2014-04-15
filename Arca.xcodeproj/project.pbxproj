@@ -116,7 +116,7 @@
 				75E8248518F49415009F6028 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		75FF571A18F4929000DA9DE7 /* Build configuration list for PBXProject "Arca" */ = {
 			isa = XCConfigurationList;
@@ -125,7 +125,7 @@
 				75FF571C18F4929000DA9DE7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
