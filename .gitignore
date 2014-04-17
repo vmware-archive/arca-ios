@@ -16,3 +16,6 @@ DerivedData
 *.hmap
 *.ipa
 
+ArcaBridge/ArcaBridge.framework
+ArcaSync/ArcaSync.framework
+ArcaCore/ArcaCore.framework
