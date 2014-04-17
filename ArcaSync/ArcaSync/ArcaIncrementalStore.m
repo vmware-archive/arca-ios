@@ -186,11 +186,13 @@ NSString * const ArcaIncrementalStoreDidFinishFetchRequest = @"ArcaIncrementalSt
         if ([self.pendingFetchesByEntityName[entityName] boolValue]) {
             [processedEntityNames addObject:entityName];
             NSOperation *fetchOperation = [self.bridgeAdaptor operationForFetchingEntity:entityName withPredicate:nil error:nil];
+            NSLog(@"fetch operation: %@", fetchOperation);
             NSOperation *dummyOperation = [NSOperation new];
             [dummyOperation setCompletionBlock:^{
                 [[NSNotificationCenter defaultCenter] postNotificationName:ArcaIncrementalStoreDidFinishFetchRequest object:self];
             }];
             [dummyOperation addDependency:fetchOperation];
+            NSLog(@"queue: %@", self.bridgeAdaptor.operationQueue);
             [self.bridgeAdaptor.operationQueue addOperations:@[fetchOperation, dummyOperation] waitUntilFinished:NO];
         }
     }

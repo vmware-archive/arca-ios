@@ -24,9 +24,14 @@ typedef enum {
     HTTPMethodPatch
 } HTTPMethod;
 
+NSString * const HTTPBodyBoundaryFormat;
+NSString * const HTTPContentSeparatorBoundryFormat;
+NSString * const HTTPContentFinalBoundary;
+
+
 @protocol ArcaBridgeAdaptorOperationInterface
 @property (nonatomic, strong) id objectSourceId;
-@property (nonatomic, strong) NSDictionary *payload;
+@property (nonatomic, strong) id payload;
 
 - (void)configureForFetchingEntity:(NSString *)entityName withPredicate:(NSPredicate *)predicate error:(NSError **)error;
 @end
@@ -49,17 +54,23 @@ typedef void (^HTTPOperationCompletionBlock)(__weak HTTPOperation *HTTPOperation
 @property (nonatomic, strong) NSString *path;
 @property (nonatomic, strong) NSDictionary *additionalHeaders;
 @property (nonatomic, readonly) NSMutableDictionary *queryParameters;
-@property (nonatomic, strong) NSDictionary *bodyJSON;
 @property (nonatomic, strong) NSDictionary *attachments;
+@property (nonatomic, strong) id payload;
+@property (nonatomic, strong) id objectSourceId;
 
 + (NSOperationQueue *)networkingQueue;
 + (NSURL *)baseURL;
 + (void)setBaseURL:(NSURL *)baseURL;
 
-- (void)configureForData:(id)collection;
+- (void)configureForPayload:(id)payload;
 - (void)success;
 - (void)failure:(NSError *)error;
 - (void)setCompletionBlock:(HTTPOperationCompletionBlock)completionBlock;
 - (id)testResponse;
+
+- (NSData *)formattedBodyData:(NSError **)error;
+- (id)performHTTPRequest:(NSError **)error;
+- (void)prepareRequest:(NSMutableURLRequest **)urlRequest error:(NSError **)error;
+- (NSURL *)URLForPath:(NSString *)path withParameters:(NSDictionary *)parameters;
 
 @end

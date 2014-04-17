@@ -24,15 +24,13 @@ NSString * const HTTPMethodPutString = @"PUT";
 NSString * const HTTPMethodPostString = @"POST";
 NSString * const HTTPMethodDeleteString = @"DELETE";
 NSString * const HTTPMethodPatchString = @"PATCH";
-static NSString * const HTTPBodyBoundaryFormat = @"--Boundary+0xAbCdGbOuNdArY\r\nContent-Disposition: form-data; name=\"%@\";\r\nContent-Type:application/json\r\n\r\n";
-static NSString * const HTTPContentSeparatorBoundryFormat = @"--Boundary+0xAbCdGbOuNdArY\r\nContent-Disposition: form-data; name=\"%@\"; filename=\"attachment.png\"\r\nContent-Type:image/png\r\nContent-Transfer-Encoding: binary\r\n\r\n";
-static NSString * const HTTPContentFinalBoundary = @"--Boundary+0xAbCdGbOuNdArY--\r\n";
+
+NSString * const HTTPBodyBoundaryFormat = @"--Boundary+0xAbCdGbOuNdArY\r\nContent-Disposition: form-data; name=\"%@\";\r\nContent-Type:application/json\r\n\r\n";
+NSString * const HTTPContentSeparatorBoundryFormat = @"--Boundary+0xAbCdGbOuNdArY\r\nContent-Disposition: form-data; name=\"%@\"; filename=\"attachment.png\"\r\nContent-Type:image/png\r\nContent-Transfer-Encoding: binary\r\n\r\n";
+NSString * const HTTPContentFinalBoundary = @"--Boundary+0xAbCdGbOuNdArY--\r\n";
+
 static NSString * const ApplicationJSONMimeIdentifier = @"application/json";
 static NSString * const MultiPartMimeIdentifier = @"multipart/form-data; boundary=Boundary+0xAbCdGbOuNdArY";
-
-NSDictionary static *NSDictionaryRemoveNSNulls(NSDictionary *dictionary);
-NSArray static *NSArrayRemoveNSNulls(NSArray *array);
-id static NSCollectionRemoveNSNulls(id collection);
 
 @protocol ArcaObjectFactoryInterface <NSObject>
 
@@ -113,7 +111,6 @@ id static NSCollectionRemoveNSNulls(id collection);
 
 
 @implementation HTTPOperation
-@synthesize objectSourceId=_objectSourceId;
 
 static NSURL *baseURL;
 + (NSURL *)baseURL {
@@ -166,7 +163,7 @@ static NSOperationQueue *networkingQueue;
 #endif
     
     NSError *error;
-    self.returnedObject = [self performJSONFetch:&error];
+    self.returnedObject = [self performHTTPRequest:&error];
     
     if (self.isCancelled) {
         return;
@@ -179,12 +176,16 @@ static NSOperationQueue *networkingQueue;
     }
 }
 
-- (void)setPayload:(NSDictionary *)payload {
-    self.bodyJSON = payload;
-}
-
-- (NSDictionary *)payload {
-    return self.bodyJSON;
+- (BOOL)validateRequest:(NSError **)error {
+    if (self.payload && self.method == HTTPMethodGet) {
+        if (error) {
+            *error = [NSError errorWithDomain:@"Remote Operation"
+                                         code:0x01
+                                     userInfo:@{NSLocalizedFailureReasonErrorKey : @"You provided a body on a GET method"}];
+        }
+        return NO;
+    }
+    return YES;
 }
 
 - (void)setCompletionBlock:(HTTPOperationCompletionBlock)completionBlock {
@@ -202,21 +203,15 @@ static NSOperationQueue *networkingQueue;
     }];
 }
 
-- (void)configureForData:(id)collection {
-    if ([collection isKindOfClass:[NSDictionary class]]) {
-        self.bodyJSON = collection;
-    } else {
-        [[NSException exceptionWithName:@"Invalid Collection Type" reason:@"You passed an unrecognized collection type" userInfo:nil] raise];
-    }
+- (void)configureForPayload:(id)payload {
+    self.payload = payload;
 }
 
 - (void)success {
-//    [self.syncDelegate operationSucceeded:self];
     return;
 }
 
 - (void)failure:(NSError *)error {
-//    [self.syncDelegate operationFailed:self withError:error];
     return;
 }
 
@@ -225,23 +220,7 @@ static NSOperationQueue *networkingQueue;
 }
 
 - (NSData *)formattedBodyData:(NSError **)error {
-    if (self.bodyJSON == nil) {
-        return [NSData new];
-    }
-
-    if (self.attachments) {
-        NSMutableData *multiPartFriendlyObjectData = [NSMutableData new];
-        for (NSString *fullyQualifiedKey in self.bodyJSON) {
-            NSString *boundaryString = [NSString stringWithFormat:HTTPBodyBoundaryFormat, fullyQualifiedKey];
-            [multiPartFriendlyObjectData appendData:[boundaryString dataUsingEncoding:NSUTF8StringEncoding]];
-            [multiPartFriendlyObjectData appendData:[self.bodyJSON[fullyQualifiedKey] dataUsingEncoding:NSUTF8StringEncoding]];
-            [multiPartFriendlyObjectData appendData:[@"\r\n" dataUsingEncoding:NSUTF8StringEncoding]];
-        }
-        return [multiPartFriendlyObjectData copy];
-    } else {
-        return [NSJSONSerialization dataWithJSONObject:self.bodyJSON
-                                               options:NSJSONWritingPrettyPrinted error:error];
-    }
+    return [NSData new];
 }
 
 - (void)prepareRequest:(NSMutableURLRequest **)urlRequest error:(NSError **)error {
@@ -269,64 +248,36 @@ static NSOperationQueue *networkingQueue;
         return;
     }
     
-    NSMutableData *jsonObjectDataWithAttachements = [*bodyData mutableCopy];
+    NSMutableData *bodyDataWithAttachments = [*bodyData mutableCopy];
     
     NSInteger attachmentIndex = 0;
     for (NSString *key in self.attachments) {
         NSString *contentSeparator = [NSString stringWithFormat:HTTPContentSeparatorBoundryFormat, key];
-        [jsonObjectDataWithAttachements appendData:[contentSeparator dataUsingEncoding:NSUTF8StringEncoding]];
-        [jsonObjectDataWithAttachements appendData:UIImagePNGRepresentation(self.attachments[key])];
-        [jsonObjectDataWithAttachements appendData:[@"\r\n" dataUsingEncoding:NSUTF8StringEncoding]];
+        [bodyDataWithAttachments appendData:[contentSeparator dataUsingEncoding:NSUTF8StringEncoding]];
+        [bodyDataWithAttachments appendData:UIImagePNGRepresentation(self.attachments[key])];
+        [bodyDataWithAttachments appendData:[@"\r\n" dataUsingEncoding:NSUTF8StringEncoding]];
         attachmentIndex++;
     }
-    [jsonObjectDataWithAttachements appendData:[HTTPContentFinalBoundary dataUsingEncoding:NSUTF8StringEncoding]];
+    [bodyDataWithAttachments appendData:[HTTPContentFinalBoundary dataUsingEncoding:NSUTF8StringEncoding]];
     
-    *bodyData = [jsonObjectDataWithAttachements copy];
+    *bodyData = [bodyDataWithAttachments copy];
 }
 
-- (NSData *)performHTTPRequest:(NSURLRequest *)httpRequest error:(NSError **)error {
+- (id)performHTTPRequest:(NSError **)error {
+    if (![self validateRequest:error]) {
+        return nil;
+    }
+    NSMutableURLRequest *HTTPRequest = [NSMutableURLRequest requestWithURL:[self URLForPath:self.path withParameters:self.queryParameters]];
+    [self prepareRequest:&HTTPRequest error:error];
+    if (*error) {
+        return nil;
+    }
     [self pushNetworkActivityIndicator];
-    NSHTTPURLResponse *jsonResponse = nil;
-    NSData *responseData = [NSURLConnection sendSynchronousRequest:httpRequest returningResponse:&jsonResponse error:error];
-    self.HTTPResponse = jsonResponse;
+    NSHTTPURLResponse *HTTPResponse = nil;
+    NSData *responseData = [NSURLConnection sendSynchronousRequest:HTTPRequest returningResponse:&HTTPResponse error:error];
+    self.HTTPResponse = HTTPResponse;
     [self popNetworkActivityIndicator];
     return responseData;
-}
-
-- (id)performJSONFetch:(NSError **)error {
-    if (self.bodyJSON && self.method == HTTPMethodGet) {
-        if (error) {
-            *error = [NSError errorWithDomain:@"Remote Operation"
-                                         code:0x01
-                                     userInfo:@{NSLocalizedFailureReasonErrorKey : @"You provided a body on a GET method"}];
-        }
-        return nil;
-    }
-    
-    NSMutableURLRequest *jsonRequest = [NSMutableURLRequest requestWithURL:[self URLForPath:self.path withParameters:self.queryParameters]];
-    [self prepareRequest:&jsonRequest error:error];
-    NSData *responseData = [self performHTTPRequest:jsonRequest error:error];
-    
-    NSString *connectionErrorString = nil;
-    if ((*error)) {
-        connectionErrorString = (*error).localizedDescription;
-        return nil;
-    }
-    [NSHTTPCookie cookiesWithResponseHeaderFields:[self.HTTPResponse allHeaderFields] forURL:[NSURL URLWithString:@"/"]];
-    
-    if (self.HTTPResponse == nil && error) {
-        *error = [NSError errorWithDomain:@"Remote Operation"
-                                     code:0x03
-                                 userInfo:@{NSLocalizedFailureReasonErrorKey : @"No response returned for operaiton"}];
-        return nil;
-    }
-    
-    if (responseData.length > 0) {
-        id returnedObject = [NSJSONSerialization JSONObjectWithData:responseData options:0 error:error];
-        self.returnedObject = NSCollectionRemoveNSNulls(returnedObject);
-    }
-    
-    return self.returnedObject;
 }
 
 - (NSURL *)URLForPath:(NSString *)path withParameters:(NSDictionary *)parameters {
@@ -415,54 +366,4 @@ static NSOperationQueue *networkingQueue;
 
 @end
 
-NSDictionary static *NSDictionaryRemoveNSNulls(NSDictionary *dictionary) {
-    BOOL argumentWasMutable = [dictionary isKindOfClass:[NSMutableDictionary class]];
-
-    NSMutableDictionary *returnDictionary = [dictionary mutableCopy];
-    for (NSString *key in dictionary) {
-        id value = dictionary[key];
-        if([value isKindOfClass:[NSNull class]]) {
-            [returnDictionary removeObjectForKey:key];
-        } else {
-            returnDictionary[key] = NSCollectionRemoveNSNulls(value);
-        }
-    }
-    
-    if (argumentWasMutable) {
-        return [returnDictionary mutableCopy];
-    } else {
-        return [returnDictionary copy];
-    }
-}
-
-NSArray static *NSArrayRemoveNSNulls(NSArray *array) {
-    BOOL argumentWasMutable = [array isKindOfClass:[NSMutableArray class]];
-
-    NSMutableArray *returnArray = [array mutableCopy];
-    for (__autoreleasing id value in array) {
-        if([value isKindOfClass:[NSNull class]]) {
-            [returnArray removeObject:value];
-        } else {
-            int index = [returnArray indexOfObject:value];
-            [returnArray replaceObjectAtIndex:index withObject:NSCollectionRemoveNSNulls(value)];
-        }
-    }
-                               
-    if(argumentWasMutable) {
-        array = [returnArray mutableCopy];
-    } else {
-        array = [returnArray copy];
-    }
-    return array;
-}
-
-id static NSCollectionRemoveNSNulls(id collection) {
-    if ([collection isKindOfClass:[NSDictionary class]]) {
-        return NSDictionaryRemoveNSNulls(collection);
-    } else if([collection isKindOfClass:[NSArray class]]) {
-        return NSArrayRemoveNSNulls(collection);
-    } else {
-        return collection;
-    }
-}
 

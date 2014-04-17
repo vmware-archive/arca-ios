@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7568D01E18FEFDF6005A57BE /* HTTPRawOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 7568D01C18FEFDF6005A57BE /* HTTPRawOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7568D01F18FEFDF6005A57BE /* HTTPRawOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7568D01D18FEFDF6005A57BE /* HTTPRawOperation.m */; };
+		7568D02218FEFEE8005A57BE /* HTTPJSONOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 7568D02018FEFEE8005A57BE /* HTTPJSONOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7568D02318FEFEE8005A57BE /* HTTPJSONOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7568D02118FEFEE8005A57BE /* HTTPJSONOperation.m */; };
 		75A6C83E18C11FFB006B3B6E /* ArcaBridge_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 75A6C83D18C11FFB006B3B6E /* ArcaBridge_Prefix.pch */; };
 		75A6C84018C11FFB006B3B6E /* ArcaBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 75A6C83F18C11FFB006B3B6E /* ArcaBridge.h */; };
 		75A6C84418C11FFC006B3B6E /* build.sh in CopyFiles */ = {isa = PBXBuildFile; fileRef = 75A6C84318C11FFC006B3B6E /* build.sh */; };
@@ -29,6 +33,10 @@
 
 /* Begin PBXFileReference section */
 		7508E3C418F6E04300C4B32F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		7568D01C18FEFDF6005A57BE /* HTTPRawOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPRawOperation.h; sourceTree = "<group>"; };
+		7568D01D18FEFDF6005A57BE /* HTTPRawOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPRawOperation.m; sourceTree = "<group>"; };
+		7568D02018FEFEE8005A57BE /* HTTPJSONOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPJSONOperation.h; sourceTree = "<group>"; };
+		7568D02118FEFEE8005A57BE /* HTTPJSONOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPJSONOperation.m; sourceTree = "<group>"; };
 		75A6C83D18C11FFB006B3B6E /* ArcaBridge_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArcaBridge_Prefix.pch; sourceTree = "<group>"; };
 		75A6C83F18C11FFB006B3B6E /* ArcaBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArcaBridge.h; sourceTree = "<group>"; };
 		75A6C84318C11FFC006B3B6E /* build.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = build.sh; sourceTree = "<group>"; };
@@ -68,6 +76,10 @@
 			children = (
 				75C22DA518C1211D00BB4046 /* HTTPOperation.h */,
 				75C22DA618C1211D00BB4046 /* HTTPOperation.m */,
+				7568D01C18FEFDF6005A57BE /* HTTPRawOperation.h */,
+				7568D01D18FEFDF6005A57BE /* HTTPRawOperation.m */,
+				7568D02018FEFEE8005A57BE /* HTTPJSONOperation.h */,
+				7568D02118FEFEE8005A57BE /* HTTPJSONOperation.m */,
 				75A6C83D18C11FFB006B3B6E /* ArcaBridge_Prefix.pch */,
 				75A6C83F18C11FFB006B3B6E /* ArcaBridge.h */,
 				75A6C84318C11FFC006B3B6E /* build.sh */,
@@ -85,6 +97,8 @@
 				75C22DA718C1211D00BB4046 /* HTTPOperation.h in Headers */,
 				75A6C84018C11FFB006B3B6E /* ArcaBridge.h in Headers */,
 				75A6C83E18C11FFB006B3B6E /* ArcaBridge_Prefix.pch in Headers */,
+				7568D01E18FEFDF6005A57BE /* HTTPRawOperation.h in Headers */,
+				7568D02218FEFEE8005A57BE /* HTTPJSONOperation.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,7 +183,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7568D01F18FEFDF6005A57BE /* HTTPRawOperation.m in Sources */,
 				75C22DA818C1211D00BB4046 /* HTTPOperation.m in Sources */,
+				7568D02318FEFEE8005A57BE /* HTTPJSONOperation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

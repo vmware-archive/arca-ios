@@ -71,21 +71,11 @@
 }
 
 - (void)registerOperationClass:(Class)operationClass forEntity:(NSEntityDescription *)entity {
-    NSMutableArray *operationClassArray = self.operationClassesByEntity[entity.name];
-    if (!operationClassArray) {
-        operationClassArray = [NSMutableArray new];
-    }
-    [operationClassArray addObject:operationClass];
-    self.operationClassesByEntity[entity.name] = operationClassArray;
+    self.operationClassesByEntity[entity.name] = operationClass;
 }
 
 - (void)unRegisterOperationClass:(Class)operationClass forEntity:(NSEntityDescription *)entity {
-    NSMutableArray *operationClassArray = self.operationClassesByEntity[entity.name];
-    if (!operationClassArray) {
-        return;
-    }
-    [operationClassArray removeObject:operationClass];
-    self.operationClassesByEntity[entity.name] = operationClassArray;
+    [self.operationClassesByEntity removeObjectForKey:entity.name];
 }
 
 - (void)unRegisterOperationClassesForEntity:(NSEntityDescription *)entity {
