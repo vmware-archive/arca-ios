@@ -42,6 +42,7 @@
 		753B0F6F18DA245400012F81 /* ArcaIncrementalStoreNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArcaIncrementalStoreNode.m; sourceTree = "<group>"; };
 		753B0F7218DA245400012F81 /* ArcaSync_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArcaSync_Prefix.pch; sourceTree = "<group>"; };
 		753B0F8D18DB6F7300012F81 /* ArcaSync.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArcaSync.h; sourceTree = "<group>"; };
+		7571C7361906BC9700DEB957 /* docset_index.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = docset_index.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,17 +56,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7508E3C618F6E05100C4B32F /* Documentation */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Documentation;
-			sourceTree = "<group>";
-		};
 		753B0F4818DA218100012F81 = {
 			isa = PBXGroup;
 			children = (
-				7508E3C618F6E05100C4B32F /* Documentation */,
+				7571C7351906BC9700DEB957 /* Documentation */,
 				7508E3C718F6E05100C4B32F /* README.md */,
 				753B0F5718DA218100012F81 /* ArcaSync */,
 			);
@@ -95,6 +89,14 @@
 			path = Support;
 			sourceTree = "<group>";
 		};
+		7571C7351906BC9700DEB957 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				7571C7361906BC9700DEB957 /* docset_index.md */,
+			);
+			path = Documentation;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -111,6 +113,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
+
+/* Begin PBXLegacyTarget section */
+		7571C7401906DEDF00DEB957 /* Documentation */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "--project-name \"${PROJECT_NAME}\" \n--project-company \"Pivotal\" \n--company-id \"com.pivotal.cfmobile\" \n--output \"${PROJECT_DIR}/Documentation/docset/\" \n--install-docset \n--logformat xcode \n--keep-undocumented-objects \n--keep-undocumented-members \n--keep-intermediate-files \n--no-repeat-first-par \n--no-warn-invalid-crossref \n--merge-categories \n--exit-threshold 2 \n--docset-platform-family iphoneos \n--ignore \"*.m\" \n--include \"${PROJECT_DIR}/${PROJECT_NAME}/Documentation/Images\" \n--index-desc \"${PROJECT_DIR}/Documentation/docset_index.md\" \n\"${PROJECT_DIR}/${PROJECT_NAME}\"";
+			buildConfigurationList = 7571C7431906DEDF00DEB957 /* Build configuration list for PBXLegacyTarget "Documentation" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/local/bin/appledoc;
+			buildWorkingDirectory = "";
+			dependencies = (
+			);
+			name = Documentation;
+			passBuildSettingsInEnvironment = 1;
+			productName = Documentation;
+		};
+/* End PBXLegacyTarget section */
 
 /* Begin PBXNativeTarget section */
 		753B0F4E18DA218100012F81 /* framework */ = {
@@ -166,6 +185,7 @@
 			targets = (
 				753B0F4E18DA218100012F81 /* framework */,
 				753B0F5518DA218100012F81 /* ArcaSync */,
+				7571C7401906DEDF00DEB957 /* Documentation */,
 			);
 		};
 /* End PBXProject section */
@@ -355,6 +375,38 @@
 			};
 			name = Release;
 		};
+		7571C7411906DEDF00DEB957 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUGGING_SYMBOLS = YES;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		7571C7421906DEDF00DEB957 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -384,6 +436,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
+		};
+		7571C7431906DEDF00DEB957 /* Build configuration list for PBXLegacyTarget "Documentation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7571C7411906DEDF00DEB957 /* Debug */,
+				7571C7421906DEDF00DEB957 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

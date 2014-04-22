@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7571C73B1906DEA100DEB957"
+               BlueprintIdentifier = "7571C7401906DEDF00DEB957"
                BuildableName = "Documentation"
                BlueprintName = "Documentation"
-               ReferencedContainer = "container:ArcaCore.xcodeproj">
+               ReferencedContainer = "container:ArcaSync.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

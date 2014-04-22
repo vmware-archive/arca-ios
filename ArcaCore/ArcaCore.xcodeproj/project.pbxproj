@@ -6,20 +6,6 @@
 	objectVersion = 46;
 	objects = {
 
-/* Begin PBXAggregateTarget section */
-		25F7BF6118ABD1D80063AF26 /* Documentation */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 25F7BF6518ABD1D80063AF26 /* Build configuration list for PBXAggregateTarget "Documentation" */;
-			buildPhases = (
-				25F7BF6618ABD1FC0063AF26 /* ShellScript */,
-			);
-			dependencies = (
-			);
-			name = Documentation;
-			productName = Documentation;
-		};
-/* End PBXAggregateTarget section */
-
 /* Begin PBXBuildFile section */
 		2508B27E1898642100AC35D5 /* ArcaContextFactoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2508B27D1898642100AC35D5 /* ArcaContextFactoryTests.m */; };
 		2508B2821899472C00AC35D5 /* ArcaContextFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 2508B2801899472C00AC35D5 /* ArcaContextFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -92,7 +78,6 @@
 		2558C7E6189713FD003737BF /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		2558C7E7189713FD003737BF /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		2558C7E91897142F003737BF /* ArcaManagedObjectTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArcaManagedObjectTests.m; sourceTree = "<group>"; };
-		25E4F90418AD2C4800331DB5 /* quick_start_guide.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = quick_start_guide.md; sourceTree = "<group>"; };
 		25E4F90518AD2D1300331DB5 /* docset_index.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = docset_index.md; sourceTree = "<group>"; };
 		25F7BF6718ABD25C0063AF26 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -233,7 +218,6 @@
 		25F7BF6918ABD57F0063AF26 /* Documentation */ = {
 			isa = PBXGroup;
 			children = (
-				25E4F90418AD2C4800331DB5 /* quick_start_guide.md */,
 				25E4F90518AD2D1300331DB5 /* docset_index.md */,
 			);
 			path = Documentation;
@@ -256,6 +240,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
+
+/* Begin PBXLegacyTarget section */
+		7571C73B1906DEA100DEB957 /* Documentation */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "--project-name \"${PROJECT_NAME}\" \n--project-company \"Pivotal\" \n--company-id \"com.pivotal.cfmobile\" \n--output \"${PROJECT_DIR}/Documentation/docset/\" \n--install-docset \n--logformat xcode \n--keep-undocumented-objects \n--keep-undocumented-members \n--keep-intermediate-files \n--no-repeat-first-par \n--no-warn-invalid-crossref \n--merge-categories \n--exit-threshold 2 \n--docset-platform-family iphoneos \n--ignore \"*.m\" \n--include \"${PROJECT_DIR}/${PROJECT_NAME}/Documentation/Images\" \n--index-desc \"${PROJECT_DIR}/Documentation/docset_index.md\" \n\"${PROJECT_DIR}/${PROJECT_NAME}\"";
+			buildConfigurationList = 7571C73C1906DEA100DEB957 /* Build configuration list for PBXLegacyTarget "Documentation" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/local/bin/appledoc;
+			buildWorkingDirectory = "";
+			dependencies = (
+			);
+			name = Documentation;
+			passBuildSettingsInEnvironment = 1;
+			productName = Documentation;
+		};
+/* End PBXLegacyTarget section */
 
 /* Begin PBXNativeTarget section */
 		2558C7351896B1E6003737BF /* framework */ = {
@@ -334,7 +335,7 @@
 				2558C7351896B1E6003737BF /* framework */,
 				2558C73C1896B1E6003737BF /* ArcaCore */,
 				2558C7631896C01D003737BF /* ArcaCoreTests */,
-				25F7BF6118ABD1D80063AF26 /* Documentation */,
+				7571C73B1906DEA100DEB957 /* Documentation */,
 			);
 		};
 /* End PBXProject section */
@@ -362,19 +363,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\n\"$PROJECT_DIR/$PROJECT_NAME/Resources/build.sh\"\n\t\t\t\t\t";
-		};
-		25F7BF6618ABD1FC0063AF26 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/appledoc \\\n--project-name \"${PROJECT_NAME}\" \\\n--project-company \"Omnia\" \\\n--company-id \"com.omnia\" \\\n--output \"${PROJECT_DIR}/Documentation/docset/\" \\\n--install-docset \\\n--logformat xcode \\\n--keep-undocumented-objects \\\n--keep-undocumented-members \\\n--keep-intermediate-files \\\n--no-repeat-first-par \\\n--no-warn-invalid-crossref \\\n--merge-categories \\\n--exit-threshold 2 \\\n--docset-platform-family iphoneos \\\n--ignore \"*.m\" \\\n--include \"${PROJECT_DIR}/${PROJECT_NAME}/Documentation/Images\" \\\n--index-desc \"${PROJECT_DIR}/Documentation/docset_index.md\" \\\n\"${PROJECT_DIR}/${PROJECT_NAME}\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -547,7 +535,7 @@
 		2558C7781896C01E003737BF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ArcaCore.framework/ArcaCore";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -570,7 +558,7 @@
 		2558C7791896C01E003737BF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ArcaCore.framework/ArcaCore";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -660,7 +648,7 @@
 		2558C7CF1896F258003737BF /* Coverage */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ArcaCore.framework/ArcaCore";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -681,24 +669,63 @@
 			};
 			name = Coverage;
 		};
-		25F7BF6218ABD1D80063AF26 /* Debug */ = {
+		7571C73D1906DEA100DEB957 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				DEBUGGING_SYMBOLS = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
-		25F7BF6318ABD1D80063AF26 /* Coverage */ = {
+		7571C73E1906DEA100DEB957 /* Coverage */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 			};
 			name = Coverage;
 		};
-		25F7BF6418ABD1D80063AF26 /* Release */ = {
+		7571C73F1906DEA100DEB957 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
@@ -745,15 +772,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		25F7BF6518ABD1D80063AF26 /* Build configuration list for PBXAggregateTarget "Documentation" */ = {
+		7571C73C1906DEA100DEB957 /* Build configuration list for PBXLegacyTarget "Documentation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				25F7BF6218ABD1D80063AF26 /* Debug */,
-				25F7BF6318ABD1D80063AF26 /* Coverage */,
-				25F7BF6418ABD1D80063AF26 /* Release */,
+				7571C73D1906DEA100DEB957 /* Debug */,
+				7571C73E1906DEA100DEB957 /* Coverage */,
+				7571C73F1906DEA100DEB957 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 

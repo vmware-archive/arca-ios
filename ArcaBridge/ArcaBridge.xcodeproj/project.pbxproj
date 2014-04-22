@@ -37,6 +37,7 @@
 		7568D01D18FEFDF6005A57BE /* HTTPRawOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPRawOperation.m; sourceTree = "<group>"; };
 		7568D02018FEFEE8005A57BE /* HTTPJSONOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPJSONOperation.h; sourceTree = "<group>"; };
 		7568D02118FEFEE8005A57BE /* HTTPJSONOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPJSONOperation.m; sourceTree = "<group>"; };
+		7571C7341906BC2A00DEB957 /* docset_index.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = docset_index.md; sourceTree = "<group>"; };
 		75A6C83D18C11FFB006B3B6E /* ArcaBridge_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArcaBridge_Prefix.pch; sourceTree = "<group>"; };
 		75A6C83F18C11FFB006B3B6E /* ArcaBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArcaBridge.h; sourceTree = "<group>"; };
 		75A6C84318C11FFC006B3B6E /* build.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = build.sh; sourceTree = "<group>"; };
@@ -55,9 +56,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7508E3C518F6E04800C4B32F /* Documentation */ = {
+		7571C7331906BC2A00DEB957 /* Documentation */ = {
 			isa = PBXGroup;
 			children = (
+				7571C7341906BC2A00DEB957 /* docset_index.md */,
 			);
 			path = Documentation;
 			sourceTree = "<group>";
@@ -65,7 +67,7 @@
 		75A6C82D18C11FFB006B3B6E = {
 			isa = PBXGroup;
 			children = (
-				7508E3C518F6E04800C4B32F /* Documentation */,
+				7571C7331906BC2A00DEB957 /* Documentation */,
 				7508E3C418F6E04300C4B32F /* README.md */,
 				75A6C83C18C11FFB006B3B6E /* ArcaBridge */,
 			);
@@ -103,6 +105,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
+
+/* Begin PBXLegacyTarget section */
+		7571C7371906DBD900DEB957 /* Documentation */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "--project-name \"${PROJECT_NAME}\" \n--project-company \"Pivotal\" \n--company-id \"com.pivotal.cfmobile\" \n--output \"${PROJECT_DIR}/Documentation/docset/\" \n--install-docset \n--logformat xcode \n--keep-undocumented-objects \n--keep-undocumented-members \n--keep-intermediate-files \n--no-repeat-first-par \n--no-warn-invalid-crossref \n--merge-categories \n--exit-threshold 2 \n--docset-platform-family iphoneos \n--ignore \"*.m\" \n--include \"${PROJECT_DIR}/${PROJECT_NAME}/Documentation/Images\" \n--index-desc \"${PROJECT_DIR}/Documentation/docset_index.md\" \n\"${PROJECT_DIR}/${PROJECT_NAME}\"";
+			buildConfigurationList = 7571C73A1906DBD900DEB957 /* Build configuration list for PBXLegacyTarget "Documentation" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/local/bin/appledoc;
+			buildWorkingDirectory = "";
+			dependencies = (
+			);
+			name = Documentation;
+			passBuildSettingsInEnvironment = 1;
+			productName = Documentation;
+		};
+/* End PBXLegacyTarget section */
 
 /* Begin PBXNativeTarget section */
 		75A6C83318C11FFB006B3B6E /* framework */ = {
@@ -158,6 +177,7 @@
 			targets = (
 				75A6C83318C11FFB006B3B6E /* framework */,
 				75A6C83A18C11FFB006B3B6E /* ArcaBridge */,
+				7571C7371906DBD900DEB957 /* Documentation */,
 			);
 		};
 /* End PBXProject section */
@@ -192,6 +212,50 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		7571C7381906DBD900DEB957 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				DEBUGGING_SYMBOLS = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		7571C7391906DBD900DEB957 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 		75A6C84518C11FFC006B3B6E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -316,6 +380,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		7571C73A1906DBD900DEB957 /* Build configuration list for PBXLegacyTarget "Documentation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7571C7381906DBD900DEB957 /* Debug */,
+				7571C7391906DBD900DEB957 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		75A6C83118C11FFB006B3B6E /* Build configuration list for PBXProject "ArcaBridge" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
