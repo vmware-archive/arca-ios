@@ -1,0 +1,759 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>HTTPOperation Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">Arca </a></h1>
+				<a id="developerHome" href="../index.html">Pivotal</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">HTTPOperation Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/HTTPResponse">&nbsp;&nbsp;&nbsp;&nbsp;HTTPResponse</option>
+	
+	<option value="//api/name/additionalHeaders">&nbsp;&nbsp;&nbsp;&nbsp;additionalHeaders</option>
+	
+	<option value="//api/name/attachments">&nbsp;&nbsp;&nbsp;&nbsp;attachments</option>
+	
+	<option value="//api/name/expectedReturnType">&nbsp;&nbsp;&nbsp;&nbsp;expectedReturnType</option>
+	
+	<option value="//api/name/method">&nbsp;&nbsp;&nbsp;&nbsp;method</option>
+	
+	<option value="//api/name/objectSourceId">&nbsp;&nbsp;&nbsp;&nbsp;objectSourceId</option>
+	
+	<option value="//api/name/path">&nbsp;&nbsp;&nbsp;&nbsp;path</option>
+	
+	<option value="//api/name/payload">&nbsp;&nbsp;&nbsp;&nbsp;payload</option>
+	
+	<option value="//api/name/protocol">&nbsp;&nbsp;&nbsp;&nbsp;protocol</option>
+	
+	<option value="//api/name/queryParameters">&nbsp;&nbsp;&nbsp;&nbsp;queryParameters</option>
+	
+	<option value="//api/name/returnedObject">&nbsp;&nbsp;&nbsp;&nbsp;returnedObject</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/baseURL">&nbsp;&nbsp;&nbsp;&nbsp;+ baseURL</option>
+	
+	<option value="//api/name/networkingQueue">&nbsp;&nbsp;&nbsp;&nbsp;+ networkingQueue</option>
+	
+	<option value="//api/name/setBaseURL:">&nbsp;&nbsp;&nbsp;&nbsp;+ setBaseURL:</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/URLForPath:withParameters:">&nbsp;&nbsp;&nbsp;&nbsp;- URLForPath:withParameters:</option>
+	
+	<option value="//api/name/configureForPayload:">&nbsp;&nbsp;&nbsp;&nbsp;- configureForPayload:</option>
+	
+	<option value="//api/name/failure:">&nbsp;&nbsp;&nbsp;&nbsp;- failure:</option>
+	
+	<option value="//api/name/formattedBodyData:">&nbsp;&nbsp;&nbsp;&nbsp;- formattedBodyData:</option>
+	
+	<option value="//api/name/performHTTPRequest:">&nbsp;&nbsp;&nbsp;&nbsp;- performHTTPRequest:</option>
+	
+	<option value="//api/name/prepareRequest:error:">&nbsp;&nbsp;&nbsp;&nbsp;- prepareRequest:error:</option>
+	
+	<option value="//api/name/setCompletionBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- setCompletionBlock:</option>
+	
+	<option value="//api/name/success">&nbsp;&nbsp;&nbsp;&nbsp;- success</option>
+	
+	<option value="//api/name/testResponse">&nbsp;&nbsp;&nbsp;&nbsp;- testResponse</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/HTTPResponse">HTTPResponse</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/additionalHeaders">additionalHeaders</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/attachments">attachments</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/expectedReturnType">expectedReturnType</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/method">method</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/objectSourceId">objectSourceId</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/path">path</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/payload">payload</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/protocol">protocol</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/queryParameters">queryParameters</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/returnedObject">returnedObject</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/baseURL">baseURL</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/networkingQueue">networkingQueue</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setBaseURL:">setBaseURL:</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/URLForPath:withParameters:">URLForPath:withParameters:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/configureForPayload:">configureForPayload:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/failure:">failure:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/formattedBodyData:">formattedBodyData:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/performHTTPRequest:">performHTTPRequest:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/prepareRequest:error:">prepareRequest:error:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setCompletionBlock:">setCompletionBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/success">success</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/testResponse">testResponse</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="HTTPOperation Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">HTTPOperation Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSOperation</td>
+</tr><tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value"><a href="../Protocols/ArcaBridgeAdaptorOperationInterface.html">ArcaBridgeAdaptorOperationInterface</a></td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">HTTPOperation.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/HTTPResponse">&nbsp;&nbsp;HTTPResponse</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/expectedReturnType">&nbsp;&nbsp;expectedReturnType</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/returnedObject">&nbsp;&nbsp;returnedObject</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/method">&nbsp;&nbsp;method</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/protocol">&nbsp;&nbsp;protocol</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/path">&nbsp;&nbsp;path</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/additionalHeaders">&nbsp;&nbsp;additionalHeaders</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/queryParameters">&nbsp;&nbsp;queryParameters</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/attachments">&nbsp;&nbsp;attachments</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/payload">&nbsp;&nbsp;payload</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/objectSourceId">&nbsp;&nbsp;objectSourceId</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/networkingQueue">+&nbsp;networkingQueue</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/baseURL">+&nbsp;baseURL</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setBaseURL:">+&nbsp;setBaseURL:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/configureForPayload:">&ndash;&nbsp;configureForPayload:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/success">&ndash;&nbsp;success</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/failure:">&ndash;&nbsp;failure:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setCompletionBlock:">&ndash;&nbsp;setCompletionBlock:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/testResponse">&ndash;&nbsp;testResponse</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/formattedBodyData:">&ndash;&nbsp;formattedBodyData:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/performHTTPRequest:">&ndash;&nbsp;performHTTPRequest:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/prepareRequest:error:">&ndash;&nbsp;prepareRequest:error:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/URLForPath:withParameters:">&ndash;&nbsp;URLForPath:withParameters:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/HTTPResponse" title="HTTPResponse"></a>
+	<h3 class="subsubtitle method-title">HTTPResponse</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSHTTPURLResponse *HTTPResponse</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/additionalHeaders" title="additionalHeaders"></a>
+	<h3 class="subsubtitle method-title">additionalHeaders</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSDictionary *additionalHeaders</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/attachments" title="attachments"></a>
+	<h3 class="subsubtitle method-title">attachments</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSDictionary *attachments</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/expectedReturnType" title="expectedReturnType"></a>
+	<h3 class="subsubtitle method-title">expectedReturnType</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) Class expectedReturnType</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/method" title="method"></a>
+	<h3 class="subsubtitle method-title">method</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) HTTPMethod method</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/objectSourceId" title="objectSourceId"></a>
+	<h3 class="subsubtitle method-title">objectSourceId</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) id objectSourceId</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/path" title="path"></a>
+	<h3 class="subsubtitle method-title">path</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *path</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/payload" title="payload"></a>
+	<h3 class="subsubtitle method-title">payload</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) id payload</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/protocol" title="protocol"></a>
+	<h3 class="subsubtitle method-title">protocol</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *protocol</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/queryParameters" title="queryParameters"></a>
+	<h3 class="subsubtitle method-title">queryParameters</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSMutableDictionary *queryParameters</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/returnedObject" title="returnedObject"></a>
+	<h3 class="subsubtitle method-title">returnedObject</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) id returnedObject</code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/baseURL" title="baseURL"></a>
+	<h3 class="subsubtitle method-title">baseURL</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (NSURL *)baseURL</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/networkingQueue" title="networkingQueue"></a>
+	<h3 class="subsubtitle method-title">networkingQueue</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (NSOperationQueue *)networkingQueue</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setBaseURL:" title="setBaseURL:"></a>
+	<h3 class="subsubtitle method-title">setBaseURL:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (void)setBaseURL:(NSURL *)<em>baseURL</em></code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/URLForPath:withParameters:" title="URLForPath:withParameters:"></a>
+	<h3 class="subsubtitle method-title">URLForPath:withParameters:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (NSURL *)URLForPath:(NSString *)<em>path</em> withParameters:(NSDictionary *)<em>parameters</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/configureForPayload:" title="configureForPayload:"></a>
+	<h3 class="subsubtitle method-title">configureForPayload:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)configureForPayload:(id)<em>payload</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/failure:" title="failure:"></a>
+	<h3 class="subsubtitle method-title">failure:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)failure:(NSError *)<em>error</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/formattedBodyData:" title="formattedBodyData:"></a>
+	<h3 class="subsubtitle method-title">formattedBodyData:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (NSData *)formattedBodyData:(NSError **)<em>error</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/performHTTPRequest:" title="performHTTPRequest:"></a>
+	<h3 class="subsubtitle method-title">performHTTPRequest:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id)performHTTPRequest:(NSError **)<em>error</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/prepareRequest:error:" title="prepareRequest:error:"></a>
+	<h3 class="subsubtitle method-title">prepareRequest:error:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)prepareRequest:(NSMutableURLRequest **)<em>urlRequest</em> error:(NSError **)<em>error</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setCompletionBlock:" title="setCompletionBlock:"></a>
+	<h3 class="subsubtitle method-title">setCompletionBlock:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)setCompletionBlock:(HTTPOperationCompletionBlock)<em>completionBlock</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/success" title="success"></a>
+	<h3 class="subsubtitle method-title">success</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)success</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/testResponse" title="testResponse"></a>
+	<h3 class="subsubtitle method-title">testResponse</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id)testResponse</code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2014 Pivotal. All rights reserved. (Last updated: 2014-04-22)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>
